@@ -11,6 +11,11 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000; // Fallback to 5000 if PORT is not set
 
+app.get('/', (req, res) => {
+    res.send('Backend is running.');
+  });
+  
+
 // Start Server
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server started at port ${PORT}`);
