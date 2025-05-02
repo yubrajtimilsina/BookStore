@@ -9,10 +9,10 @@ const Order = require("./routes/order");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 5000; // Fallback to 5000 if PORT is not set
+const PORT = process.env.PORT || 3000; // Fallback to 5000 if PORT is not set
 
 // Start Server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server started at port ${PORT}`);
 });
 
